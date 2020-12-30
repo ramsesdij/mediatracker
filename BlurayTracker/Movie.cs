@@ -7,12 +7,6 @@ using System.Threading.Tasks;
 
 namespace BlurayTracker
 {
-    public class MovieJson
-    {
-        [JsonProperty("movies")]
-        public List<Movie> movies { get; set; }
-    }
-
     public class Movie
     {
         public string Title { get; set; }

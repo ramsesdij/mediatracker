@@ -51,7 +51,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -249,21 +248,11 @@
             this.progressBar1.Size = new System.Drawing.Size(232, 23);
             this.progressBar1.TabIndex = 17;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 629);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Loading";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1149, 712);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -316,7 +305,6 @@
         private System.Windows.Forms.DataGridViewCheckBoxColumn Available;
         private System.Windows.Forms.DataGridViewButtonColumn Delete;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.Label label3;
     }
 }
 

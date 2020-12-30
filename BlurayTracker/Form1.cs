@@ -22,6 +22,7 @@ namespace BlurayTracker
             InitializeComponent();
             comboBox1.SelectedIndex = comboBox1.FindStringExact("DVD");
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            progressBar1.Hide();
         }
 
         protected void ResetFields()
@@ -85,8 +86,8 @@ namespace BlurayTracker
                     this.movies.Add(movie);
                     dataGridView1.Rows.Add(movie.Title, movie.Year, movie.Format, movie.Country, movie.Available);
                     this.loader.IncrementLoader();
-                }
-            }
+                }              
+            }          
         }
 
         /// <summary>

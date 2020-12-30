@@ -10,7 +10,7 @@ namespace BlurayTracker
     public class Loader
     {
         private int moviesLength = 0;   
-        private ProgressBar progressBar;
+        private ProgressBar progressBar;       
 
         public Loader(ProgressBar progressBar)
         {
@@ -19,7 +19,7 @@ namespace BlurayTracker
 
         private void Reset()
         {
-            this.progressBar.Value = this.progressBar.Maximum;
+            this.progressBar.Value = 0;
             this.moviesLength = 0;
        
         }
@@ -29,17 +29,17 @@ namespace BlurayTracker
             this.Reset();
             this.moviesLength = movies.Count;
             this.progressBar.Maximum = this.moviesLength;
-           
+            this.progressBar.Show();
         }
 
         public void IncrementLoader()
         {
             if (this.progressBar.Value != this.moviesLength)
             {
-                this.progressBar.Value++;               
+                this.progressBar.Value++;                
             } else
-            {
-                this.progressBar.Value = this.progressBar.Maximum;
+            {                
+                this.progressBar.Value = this.progressBar.Maximum;               
             }                     
         }
     }
